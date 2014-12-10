@@ -73,21 +73,24 @@ button {
 /*-----------------------------------------------------------------------------------*/
 
 /*---- Typography ----*/
-header h1, 
-.payoff h1,
+header h1,
 .details .carousel,
 .social a:hover{
-	color: #0bf397;
+	color: #76FF03;
 }
 
-.features p{
-	color: #06b872;
+.payoff h1{
+    color: #000000;
+}
+
+.ethos p{
+	color: #C8E6C9;
 }
 
 /*---- Background ----*/
-.features,
+.ethos,
 .detail .carousel-indicators .active {
-	background: #0bf397;	
+	background: #64DD17;
 }
 	
 
@@ -144,7 +147,9 @@ nav.navbar.fixed-to-top{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-
+.navbar-brand img{
+   margin-top: -30px;
+}
 /*-----------------------------------------------------------------------------------*/
 /* HEADER 
 /*-----------------------------------------------------------------------------------*/
@@ -173,12 +178,12 @@ header p.lead{
 }
 
 
-header .carousel-iphone{
+header .carousel-android {
 	margin-right: auto;
 	margin-left: auto;
 	width: 320px;
 	height: 672px;
-	background: url('../img/iphone-front.png') no-repeat;
+	background: url('../img/android-front.png') no-repeat;
 	background-size: 100%;
 	
 }
@@ -198,7 +203,7 @@ header .carousel-indicators .active {
 }
 
 header .carousel-indicators {
-	bottom: -63px;
+	bottom: -103px;
 }
 
 header .carousel-indicators li {
@@ -229,14 +234,21 @@ header .carousel-indicators li {
 	color: white;
 }
 
+.purchase button.git-hub{
+    width: 152px;
+    height: 52px;
+    background: url(../img/badge-gh.png) #3a3a3a no-repeat 0px 5px;
+    color: white;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	PAYOFF
 /*-----------------------------------------------------------------------------------*/
 
 .payoff{
 	overflow: hidden;
-	padding: 230px 0px 150px 0px;
-	min-height: 600px;
+	padding: 180px 0px 150px 0px;
+	min-height: 550px;
 	background: url('../img/dunes.jpg');
 	background-position: center top;
 	background-repeat: repeat-x;
@@ -265,7 +277,7 @@ header .carousel-indicators li {
 	text-align: center;
 }
 
-.detail .features .row{
+.detail .ethos .row{
 	margin-bottom: 40px;
 }
 
@@ -293,7 +305,7 @@ header .carousel-indicators li {
 	padding-top: 95px;
 	width: 320px;
 	height: 450px;
-	background: url('../img/iphone-front.png') no-repeat;
+	background: url('../img/android-front.png') no-repeat;
 	background-size: 100%;
 }
 
@@ -341,24 +353,24 @@ header .carousel-indicators li {
 /*	FEATURES
 /*-----------------------------------------------------------------------------------*/
 
-.features{
+.ethos {
 	overflow: hidden;
 	padding: 150px 0px 150px 0px;
 	min-height: 400px;
 	color: black;
 }
 
-.features p {
+.ethos p {
 	font-weight: 400;
 }
 
-.features h2{
+.ethos h2{
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 300;
 }
 
-.features .circle{
+.ethos .circle{
 	box-sizing: border-box;
 	margin-right: auto;
 	margin-left: auto;
@@ -371,7 +383,7 @@ header .carousel-indicators li {
 	
 }
 
-.features span.glyphicon, .features i{
+.ethos span.glyphicon, .ethos i{
 	margin-top: 3px;
 	color: #ffffff;
 	font-size: 5em;
@@ -422,6 +434,13 @@ header .carousel-indicators li {
 	height: 52px;
 	background: url(../img/badge-appstore.png) #373737 no-repeat 0px 5px;
 	color: white;
+}
+
+.get-it button.git-hub{
+    width: 152px;
+    height: 52px;
+    background: url(../img/badge-gh.png) #373737 no-repeat 0px 5px;
+    color: white;
 }
 
 .get-it hr{
@@ -506,7 +525,7 @@ header, .social{
 	font-size: 24px;
 }
 
-.features .col-md-4{
+.ethos .col-md-4{
 	margin-bottom: 60px;
 }
 
@@ -514,7 +533,7 @@ header, .social{
 
 @media (max-width:480px){
 
-	header .carousel-iphone, .detail .app-screenshot{
+	header .carousel-android, .detail .app-screenshot{
 		width: 280px;
 	}
 	
@@ -541,7 +560,7 @@ header, .social{
 		padding-top: 50px;
 	}
 	
-	.features col-md-4{
+	.ethos col-md-4{
 		margin-bottom: 50px;
 	}
 	
@@ -553,5 +572,11 @@ header, .social{
         background: url(../img/badge-appstore@2x.png) #3a3a3a no-repeat 0px 5px;
         background-size: 98%;
     	color: white;
+    }
+
+    .purchasebutton.git-hub, .get-it button.git-hub{
+        background: url(../img/badge-gh@2x.png) #3a3a3a no-repeat 0px 5px;
+        background-size: 98%;
+        color: white;
     }
 }
